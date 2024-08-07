@@ -5,11 +5,11 @@ library(pec)
 library(rms)
 
 ##----- Load data -----------------------------------------------
-
-working_dir <- "C:/Users/zoewa/Desktop/Deep_survival/code/Survival_Benchmark"
-train_set <- read.csv(file.path(working_dir, paste("data/train_set")), stringsAsFactors = TRUE)
-val_set <- read.csv(file.path(working_dir, paste("data/val_set")), stringsAsFactors = TRUE)
-test_set <- read.csv(file.path(working_dir, paste("data/test_set")), stringsAsFactors = TRUE)
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+working_dir <- "../../../data/"
+train_set <- read.csv(file.path(working_dir, paste("train_set")), stringsAsFactors = TRUE)
+val_set <- read.csv(file.path(working_dir, paste("val_set")), stringsAsFactors = TRUE)
+test_set <- read.csv(file.path(working_dir, paste("test_set")), stringsAsFactors = TRUE)
 
 # ## Another method: Load data and split data
 # data("sample_data_survival_small")
