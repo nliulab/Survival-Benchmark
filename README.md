@@ -45,7 +45,7 @@ To install the required Python packages, run: ``pip install -r requirements.txt`
 We further conducted the Multiple Comparisons with the Best (MCB) test for C-index and IBS measures to assess the statistical significance of different models' performance.
 
 Run script `scripts/R/MCB/mcb_plot.R` to draw MCB plots for C-index and IBS, with results stored in `figures`. The MCB plot in this demo is represented as follows: 
-![MCB Plot](https://github.com/nliulab/Survival-Benchmark/blob/main/figures/sum_mcb.pdf)
+![MCB Plot](https://github.com/nliulab/Survival-Benchmark/blob/main/figures/sum_mcb_jpg.jpg)
 
 ### Citing Our Work
 Z. Wang, et al. "Survival modeling using deep learning, machine learning and statistical methods: A comparative analysis for predicting mortality after hospital admission". arXiv preprint [arXiv:2403.06999](https://arxiv.org/abs/2403.06999) (2024)
