@@ -5,11 +5,11 @@ library(pec)
 library(tidyverse)
 
 ##----- Load data -----------------------------------------------
-
-working_dir <- "C:/Users/zoewa/Desktop/Deep_survival/code/Survival_Benchmark"
-train_set <- read.csv(file.path(working_dir, paste("data/train_set")), stringsAsFactors = TRUE)
-val_set <- read.csv(file.path(working_dir, paste("data/val_set")), stringsAsFactors = TRUE)
-test_set <- read.csv(file.path(working_dir, paste("data/test_set")), stringsAsFactors = TRUE)
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+working_dir <- "../../../data/"
+train_set <- read.csv(file.path(working_dir, paste("train_set")), stringsAsFactors = TRUE)
+val_set <- read.csv(file.path(working_dir, paste("val_set")), stringsAsFactors = TRUE)
+test_set <- read.csv(file.path(working_dir, paste("test_set")), stringsAsFactors = TRUE)
 
 des_vars <- c("Vital_G")
 train_set[des_vars] <- lapply(train_set[des_vars], factor)
